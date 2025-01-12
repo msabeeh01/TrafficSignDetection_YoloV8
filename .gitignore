@@ -137,6 +137,7 @@ env.bak/
 venv.bak/
 archive/
 archive
+yolo11n.pt
 
 # Spyder project settings
 .spyderproject
