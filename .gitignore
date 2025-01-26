@@ -137,6 +137,8 @@ env.bak/
 venv.bak/
 archive/
 archive
+runs
+runs/
 yolo11n.pt
 
 # Spyder project settings

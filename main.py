@@ -18,7 +18,8 @@ sns.set_theme(rc={'axes.facecolor': '#f9f9f9'}, style='darkgrid')
 
 def main():
     # display_images()
-    pretrained_model()
+    # pretrained_model()
+    selftrained_model()
 
 def display_images():
     # Location of training images
@@ -65,6 +66,14 @@ def pretrained_model():
     plot = cv2.cvtColor(plot, cv2.COLOR_BGR2RGB)
     plt.imshow(Image.fromarray(plot))
     plt.show()
+
+def selftrained_model():
+    model = YOLO("yolo11n.pt")
+
+    # Train the model
+    trained_Model = model.train(data="./archive/car/data.yaml", epochs = 2, batch = -1, optimizer='auto')
+
+
 
 
 
